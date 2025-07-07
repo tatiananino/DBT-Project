@@ -9,7 +9,7 @@ customers as (
 
 select
     o.id as order_id,
-    o.customer as customer_id,  -- renombramos aquí
+    o.customer as customer_id,
     o.ordered_at as ordered_date
 from orders o
 join customers c on o.customer = c.customer_id
