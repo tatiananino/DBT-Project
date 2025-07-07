@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Table de staging pour les commandes (raw_orders)."
+    columns:
+      - name: id
+        description: "Identifiant unique de la commande."
+      - name: order_date
+        description: "Date de la commande."
+      - name: customer_id
+        description: "Identifiant du client qui a passé la commande."
+      - name: amount
+        description: "Montant total de la commande."
